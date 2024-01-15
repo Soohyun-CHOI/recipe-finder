@@ -9,4 +9,4 @@ Recipe Finder is a Python-based graphical user interface (GUI) application that 
 - **Display Format**: Recipes are displayed in a table showing the clickable title, number of matched ingredients, and the matched ingredients list, sorted by the number of matching user ingredients.
 
 ## Acknowledgments
-- Data provided by  https://www.kaggle.com/datasets/pes12017000148/food-ingredients-and-recipe-dataset-with-images 
+- Data provided by [kaggle: Food Ingredients and Recipes Dataset with Images](https://www.kaggle.com/datasets/pes12017000148/food-ingredients-and-recipe-dataset-with-images)
