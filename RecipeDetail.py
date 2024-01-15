@@ -170,7 +170,7 @@ class RecipeDetail(QWidget):
         :param image_path: path to the desired image
         :return: path to either the desired image or the default image
         """
-        rout = "static/images/"
+        rout = "statics/images/"
         name = image_path if os.path.exists(rout + image_path + ".jpg") else "default"
         return rout + name + ".jpg"
 

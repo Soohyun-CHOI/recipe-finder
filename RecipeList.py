@@ -68,8 +68,8 @@ class RecipeList(QWidget):
         # setting the dimensions and color
         self.backgroundLabel.setGeometry(0, 0, 1000, 121)
         self.backgroundLabel.setStyleSheet("background-color: #cccccc;")
-        # uses pixmap to map the image from the static folder
-        pixmap = QPixmap("static/images/default.jpg")
+        # uses pixmap to map the image from the statics folder
+        pixmap = QPixmap("statics/images/default.jpg")
         # scales the image to match the defined area
         scaled_pixmap = pixmap.scaled(self.backgroundLabel.width(), self.backgroundLabel.height(),
                                       Qt.KeepAspectRatioByExpanding)
@@ -376,11 +376,11 @@ class RecipeList(QWidget):
     @staticmethod
     def load_data():
         """
-        Loads data from static folder
+        Loads data from statics folder
         :return: the dataset as a pandas dataframe
         """
-        # load data from static folder
-        data = pd.read_csv("static/data/Food Ingredients and Recipe Dataset with Image Name Mapping.csv")
+        # load data from statics folder
+        data = pd.read_csv("statics/data/Food Ingredients and Recipe Dataset with Image Name Mapping.csv")
         return data
 
     @staticmethod
